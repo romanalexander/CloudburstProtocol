@@ -127,13 +127,13 @@ public abstract class BedrockSession {
 
     protected void logOutbound(BedrockPacket packet) {
         if (log.isTraceEnabled() && this.logging) {
-            log.trace("Outbound {}{}: {}", this.getSocketAddress(), this.subClientId, packet);
+            log.trace("Outbound {}:{}: {}", this.getSocketAddress(), this.subClientId, packet);
         }
     }
 
     protected void logInbound(BedrockPacket packet) {
         if (log.isTraceEnabled() && this.logging) {
-            log.trace("Inbound {}{}: {}", this.getSocketAddress(), this.subClientId, packet);
+            log.trace("Inbound {}:{}: {}", this.getSocketAddress(), this.subClientId, packet);
         }
     }
 
